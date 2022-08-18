@@ -315,6 +315,43 @@ h4 {
     width: 40px;
 }
 
+/* Breaking News */
+.breaking-news {
+    background: url('../img/breaking-news/break-news-bg.jpeg') no-repeat center center /
+    cover;
+    height: 800px;
+    position: relative;
+}
+
+.breaking-news-content {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    max-width: 550px;
+}
+
+.breaking-news-logos {
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breaking-news-logos > div {
+    background: url('../img/network-logo-bg.png') no-repeat center center /
+    cover;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breaking-news-logos img {
+    width: 30px;
+}
+
 /* Footer */
 .footer {
     background: #ebedf2;
