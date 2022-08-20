@@ -5,7 +5,7 @@ let tabIndicator = tabs.querySelector(".tab-indicator");
 let tabHeaderNodes = tabs.querySelectorAll(".tab-header > div");
 let tabBodyNodes = tabs.querySelectorAll(".tab-body > div");
 
-let backgroundImage = document.body.style.backgroundImage = "url('../img/live-sports.jpg')";
+let backgroundImage1 = document.body.style.backgroundImage = "url('../img/live-sports.jpg')";
 let backgroundRepeat = document.body.style.backgroundRepeat = "no-repeat"
 
 
@@ -18,8 +18,11 @@ for(let i=0;i<tabHeaderNodes.length;i++){
     tabBodyNodes[i].classList.add("active");
     tabIndicator.style.left = `calc(calc(100% / 3) * ${i})`
   });
-  
+
+
 }
+
+
 
 
 
