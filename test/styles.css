@@ -1,5 +1,11 @@
 /* codepen code */
 
+.container {
+  background-image: url('../img/live-sports.jpg')
+}
+
+
+
 body {
   background: black;
   font-family: arial;
@@ -10,6 +16,8 @@ body {
   max-width: 700px;
   max-height: 700px;
 }
+
+
 
 .tabs {
   position: relative;
@@ -81,7 +89,7 @@ body {
 
 /*  Slider Backgrounds */
 .live-sports {
-  background: url('../img/live-sports.jpg') no-repeat center center /
+  background: url('../img/biggest-events/big-events-bg.png') no-repeat center center /
   cover;
   height: 800px;
   position: relative;
