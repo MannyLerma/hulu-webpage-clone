@@ -37,6 +37,10 @@ h3 {
     font-weight: 300;
 }
 
+h2 {
+    font-size: 50px;
+}
+
 h4 {
     color: #00ed82;
     font-size: 14px;
@@ -352,6 +356,43 @@ h4 {
     width: 30px;
 }
 
+/* Events News */
+.breaking-news {
+    background: url('../img/breaking-news/break-news-bg.jpeg') no-repeat center center /
+    cover;
+    height: 800px;
+    position: relative;
+}
+
+.breaking-news-content {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    max-width: 550px;
+}
+
+.big-events-logos {
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.big-events-logos > div {
+    background: url('../img/network-logo-bg.png') no-repeat center center /
+    cover;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-events-logos img {
+    width: 30px;
+}
+
 /* Footer */
 .footer {
     background: #ebedf2;
@@ -473,6 +514,118 @@ h4 {
     display: block;
     text-transform: uppercase;
 }
+
+/* Section Tabs */
+
+.live-tv {
+    background: url('../img/live-sports.jpg') no-repeat center center /
+    cover;
+
+}
+.tabs {
+    position: relative;
+    top: 25%;
+    left: 35%;
+    transform: translate(-50%,0%);
+    width: 500px;
+    height: 700px;
+    padding: 150px 10px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  
+  .tabs .tab-header {
+    height: 60px;
+    display: flex;
+  }
+ 
+  .tabs .tab-header > div {
+    width: calc(100% / 3);
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(160, 159, 159);
+    text-align-last: left;
+  }
+ 
+  .tabs .tab-header > div.active {
+    color: white;
+  }
+
+  .tabs .tab-indicator {
+    position: relative;
+    width: calc(65% / 3);
+    height: 6px;
+    background: white;
+    justify-self: center;
+    left: 0px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    transition: all 500ms ease-in-out;
+  }
+      
+
+  .tab-body {
+    position: relative;
+    height: calc(100% - 45px);
+    padding: 10px 0;
+  }
+ 
+  .tabs .tab-body > div {
+    position: absolute;
+    top: -200%;
+    opacity: 0;
+    margin-top: 5px;
+    transform: scale(0.9);
+    transition: opacity 500ms ease-in-out 0ms,
+       transform 500ms ease-in-out 0ms;
+  }
+  
+  .tabs .tab-body > div.active {
+    top: 0px;
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 0px;
+  } 
+
+
+  /* Section Background Images */
+
+
+  .live-tv.preload-images {
+    background-image: url(https://sportsnaut.com/wp-content/uploads/2022/04/Hulu-Sports2_Hulu-1-1024x544.jpeg),
+      url(https://www.hulu.com/static/hitch/s3/attachments/ckzyp4x986iio1k7rkj43368r-ckuh9mwg007ws1v4zm8i4kk07-ckqiozsqemxsf1u3mw3ihh0ti-news-1600x850-2x-full.jpg),
+      url("../img/biggest-events/big-events-bg.png");
+  }
+  .background-image-sports {
+    background-color: #d2c2b5;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.377)),
+    url(https://sportsnaut.com/wp-content/uploads/2022/04/Hulu-Sports2_Hulu-1-1024x544.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+  }
+  .background-image-news {
+    background-color: #d62752;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.228)),
+    url(https://www.hulu.com/static/hitch/s3/attachments/ckzyp4x986iio1k7rkj43368r-ckuh9mwg007ws1v4zm8i4kk07-ckqiozsqemxsf1u3mw3ihh0ti-news-1600x850-2x-full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+  }
+  .background-image-events {
+    background-color: #56826b;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.547)),
+     url("../img/biggest-events/big-events-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+  }
 
 /* Media Queries */
 @media(max-width: 1100px) {
