@@ -636,87 +636,8 @@ h4 {
     background-attachment: inherit;
   }
 
-/* Media Queries */
-@media(max-width: 1100px) {
-    .categories .covers {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media(max-width: 768px) {
-    .header .logo {
-        width: 190px;
-    }
-
-    .header .header-content {
-        text-align: center;
-        padding: 0 20px;
-    }
-
-    .header .header-text-1 {
-        margin-bottom: 25px;
-    }
-
-    .header .header-text-2 {
-        display: none;
-    }
-
-    .sub-header {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .sub-header img {
-        width: 250px;
-        margin: auto;
-    }
-
-    .sub-header > div:last-of-type {
-        justify-self: center;
-        align-self: center;
-    }
-
-    .text-xl {
-        line-height: 1.3;
-        font-size: 40px;
-    }
-
-    .sub-text {
-        font-size: 20px;
-    }
-
-    .categories .covers {
-        grid-template-columns: 1fr;
-    }
-
-    .live-border {
-        padding: 30px 10px;
-        gap: 15px;
-    }
-
-    .live-sports {
-        background: url('../img/live-sports-small.jpg') no-repeat center
-        center / cover;
-    }
-
-    .live-sports-content {
-        top: 30px;
-        left: 30px;
-        margin-top: 120px;
-    }
-
-    .footer-lists {
-        flex-direction: column;
-    }
-
-    .modal .modal-box {
-        width: 350px;
-    }
-}
 
 /* Pricing Table */
-
 
 .trial {
     font-family: "Arial";
@@ -847,3 +768,149 @@ h4 {
     padding: 12px;
     line-height: 16px;
   }
+
+
+
+/* Media Queries */
+@media(max-width: 1100px) {
+    .categories .covers {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    /* Original */
+    .header .logo {
+        width: 190px;
+    }
+
+    .header .header-content {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .header .header-text-1 {
+        margin-bottom: 25px;
+    }
+
+    .header .header-text-2 {
+        display: none;
+    }
+
+    .sub-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .sub-header img {
+        width: 250px;
+        margin: auto;
+    }
+
+    .sub-header > div:last-of-type {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .text-xl {
+        line-height: 1.3;
+        font-size: 40px;
+    }
+
+    .sub-text {
+        font-size: 20px;
+    }
+
+    .categories .covers {
+        grid-template-columns: 1fr;
+    }
+
+    .live-border {
+        padding: 30px 10px;
+        gap: 15px;
+    }
+
+    .live-tv {
+        background: url('../img/live-sports-small.jpg') no-repeat center
+        center / cover;
+    }
+
+    .background-image-news {
+        background-color: #d62752;
+        background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.228)),
+        url('../img/breaking-news/break-news-mobile-bg.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: inherit;
+      }
+
+    .background-image-events {
+        background-color: #56826b;
+        background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.547)),
+         url("../img/biggest-events/events-mobile-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: inherit;
+      }
+
+    .live-sports-content {
+        top: 30px;
+        left: 30px;
+        margin-top: 120px;
+    }
+
+    .footer-lists {
+        flex-direction: column;
+    }
+
+    .modal .modal-box {
+        width: 350px;
+    }
+
+    .tabs {
+        position: relative;
+        width: 400px;
+        height: 700px;
+        padding: 150px 10px;
+        left: 50%;
+        padding: 35px 10px;
+    }
+
+    .tabs .tab-header > div {
+        text-align-last: center;
+    }
+
+    .tabs .tab-indicator {
+        position: relative;
+        width: calc(85% / 3);
+        height: 6px;
+        background: white;
+        /* justify-self: center; */
+        margin-top: -25px;
+        margin-bottom: 30px;
+        transition: all 500ms ease-in-out;
+      }
+
+      /* Pricing Table */
+      .header-description {
+        font-size: 21px;
+        text-align: center;
+      }
+
+      .price-table-header {
+        width: 100%;
+      }
+
+      td.mobile-toggle:first-child {
+        display: none;
+      }
+
+      .mobile-price-cells {
+        display: flex;
+        flex-direction: column;
+      }
+
+}
