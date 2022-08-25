@@ -726,7 +726,7 @@ b {
     color: black;
     letter-spacing: 1.05px;
     max-width: 120px;
-    margin-bottom: 24px;
+    margin-bottom: 7px;
   }
   
   .trial-text {
@@ -828,10 +828,10 @@ b {
   }
     
   .table-head-container {
-    margin: 24px 2px;
+    margin: 24px -10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
     
   .plans-container {
@@ -919,6 +919,14 @@ b {
         font-size: 18px;
         margin: 0 -100px 25px -100px;
       } */
+
+    .header nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 5px;
+        z-index: 2;
+        position: relative;
+    }
 
     div > img {
         width: 18%;
@@ -1056,7 +1064,21 @@ b {
     }
 
 
+    .sticky {
+        position: relative;
+        background: black;
+        margin: -10;
+        padding: 0px 0px;
+        position: fixed;
+        top: -24px;
+        width: 100%;
+        border-bottom: 1px gray solid;
+      }
 
+      .sticky + body {
+        padding-top: 102px;
+      }
+      
 
 
     .mobile-header {
