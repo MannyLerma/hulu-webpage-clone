@@ -63,7 +63,7 @@ for (var i = 0; i < els.length; i++) {
 // Function to switch through backgrounds
 function changeBackground(id) {
     // document.querySelectorAll('[id^="background"]');
-    // var classes = console.log(document.querySelector("body").classList.length);
+    // let classes = console.log(document.querySelector("body").classList.length);
     // clear all background classes from body
     const cls = [
       "background-image-sports",
@@ -89,3 +89,21 @@ function changeBackground(id) {
         break;
     }
   }
+
+
+  // function for sticky header
+
+window.onscroll = function() {myFunction()};
+
+let header = document.getElementById("sticky");
+
+let sticky = header.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}

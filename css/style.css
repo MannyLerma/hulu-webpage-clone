@@ -38,7 +38,7 @@ img {
 }
 
 td > img {
-    width: 12%;
+    width: 9%;
 }
 
 h3 {
@@ -61,6 +61,7 @@ h4 {
     background: #fff;
     color: #333;
     min-width: 135px;
+    max-width: 350px;
     padding: 20px 32px;
     font-size: 15px;
     font-weight: 600;
@@ -140,6 +141,7 @@ h4 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    width: 100%;
 }
 
 .header .logo {
@@ -242,6 +244,10 @@ h4 {
     ),
     linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0)
     71.49%);
+}
+
+.categories .cover-grad {
+    cursor: pointer;
 }
 
 .categories .cover-text {
@@ -639,15 +645,248 @@ h4 {
 
 /* Pricing Table */
 
+b {
+    font-size: 21px;
+  }
+  
+  h2 {
+    font-size: 52px;
+  }
+  
+  button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 40px;
+    width: 90%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .plan-header-container {
+    padding-bottom: 35px;
+  }
+  
+  .plan-header {
+    margin-top: 60px;
+  
+  }
+  
+  .plans-description {
+    font-size: 21px;
+    margin-top: 25px;
+    margin-bottom: -30px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  
+  .plan-divider {
+    display: flex;
+    border: .5px gray solid;
+    margin: 0px 25px;
+  }
+  
+  .table-head-container {
+    margin: 0px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .plans-container {
+    margin: 24px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  div .toggle-section {
+    width: 33%;
+  /*   background-color: blue; */
+  }
+  
+  div .plan-chooser {
+    height: 240px;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    width: 40%;
+    text-align: center;
+  }
+  
+  .popular-badge {
+    display: inline-flex;
+    font-size: 11px;
+    background-color: #1ce783;
+    padding: 12px 10px;
+    border-radius: 21px;
+    color: black;
+    letter-spacing: 1.05px;
+    max-width: 120px;
+    margin-bottom: 24px;
+  }
+  
+  .trial-text {
+    color: gray;
+    font-weight: bold;
+  }
+  
+  .plan-chooser {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  div .plans-detail-section {
+    display: flex;
+    text-align: left;
+    width: 300px;
+  }
+  
+  /* Table */
+  div.table-head-container > div:nth-child(3) {
+    background: rgba(255, 255, 255, 0.14);
+  }
+
+  .plan-body {
+    margin:0px 75px 100px 75px;
+  }
+
+  div .check-marks {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-around;
+  }
+  
+  div.plan-details {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    margin: 0 -26px 30 -26px;
+  }
+  
+  div .plans-detail-section {
+    width: 33%;
+  /*   background-color: blue; */
+  }
+  
+  div .plan-cell-chooser {
+    width: 40%;
+    text-align: -webkit-center;
+    align-self: center;
+  }
+  
+  div.disclaimer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px;
+    gap: 3px;
+  }
+  
+  .disclaimer {
+    text-align: left;
+    font-size: 12px;
+  }
+  
+    div > img {
+    width: 10%;
+}
+
+  .plan-table-body {
+    display: flex;
+    margin: 0;
+    text-align: center;
+  }
+
+  .plan-header-container {
+    text-align: center;
+  }
+
+    /* Sticky Header */
+    .sticky {
+        background: black;
+        margin: 0;
+        padding: 0px 0px;
+        position: fixed;
+        top: 0;
+        width: 90%;
+        border-bottom: 1px gray solid;
+      }
+      .sticky + body {
+        padding-top: 102px;
+      }
+  
+  /* Media Queries */
+  @media(max-width: 768px) {
+     div .toggle-section {
+    display: none;
+  /*   background-color: blue; */
+  }
+    
+  .table-head-container {
+    margin: 24px 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+    
+  .plans-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px -50px;
+  }
+    
+  div .plans-detail-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  /*   background-color: blue; */
+  }
+    
+  div.plan-details {
+    font-size: 18px;
+    margin: 0 -24px 24px -24px;
+    text-align: center;
+    }
+    
+  div .plan-cell-chooser {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    text-align: -webkit-center;
+    justify-content: center;
+  }
+    
+    div .check-marks {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+  }
+    
+  }
+
+
+
+
+
+
+
+
+
+
 .trial {
     font-family: "Arial";
     color: gray;
     font-weight: bold;
   }
   
-  .header-description {
-    font-size: 21px;
-  }
   
   body {
     font-family: arial;
@@ -655,119 +894,11 @@ h4 {
     color: white;
     margin-bottom: 24px;
   }
+
   
-  .price-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 36px;
-  }
-  
-  .plans-divider {
-    display: flex;
-    margin: 50px 40px 0px 40px;
-    background-color: gray;
-    height: 1.36px;
-  }
-  
-  .plan-head-container {
-    display:;
-    flex-direction: row;
-  }
-  
-  .plan-head_content {
-    width: 100%;
-  }
-  
-  .plan-head_popular-badge {
-    background: #04cd6a;
-    
-  }
-  
-  /* Added Code */
-  .main {
-      box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
-      font-family: "Open Sans";
-      width: 90%;
-      margin: 0 auto;
-  }
-  
-  td.border-bottom {
-    border-bottom: 1px solid gray;
-  }
-  
-  .price-table {
-      width: 100%;
-      border-collapse: collapse;
-      border: 0 none;
-  }
-  .price-table tr:not(:last-child) {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-  }
-  .price-table tr td {
-      border-left: px solid rgba(0, 0, 0, 0.05);
-      padding: 16px 8px;
-      font-size: 16px;
-  }
-  .price-table tr td:first-child {
-      border-left: 0 none;
-  }
-  .price-table tr td:not(:first-child) {
-      text-align: center;
-  }
+  /* Pricing Table */
   
   
-  .price-table tr td:nth-child(3) {
-      background-color: rgba(216, 214, 227, 0.15);
-      padding: 8px 10px;
-  }
-  
-  .price-table tr.price-table-head {
-      color: #FFFFFF;
-  }
-  
-  .price-table td.price a {
-      background-color: white;
-      color: black;
-      padding: 16px 72px;
-      margin-bottom: 24px;
-      font-size: 12px;
-      font-weight: 600;
-      font-family: "Arial";
-      text-decoration: none;
-      text-transform: uppercase;
-      display: inline-block;
-      border-radius: 5px;
-  }
-  
-  .popular-module {
-    font-size: 11px;
-    background-color: #1ce783;
-    padding: 12px 10px;
-    border-radius: 21px;
-    letter-spacing: 1px;
-  }
-  
-  .price-table td.price-table-popular {
-      font-family: "Arial";
-      color: black;
-      text-transform: uppercase;
-      font-size: 12px;
-      padding: 28px 30px 15px 30px;
-      font-weight: 700;
-  }
-  
-  .price-table svg {
-      width: 90px;
-      fill: #5336ca;
-  }
-  
-  /* Disclaimer */
-  .disclaimer-container {
-    font-size: 10px;
-    padding: 12px;
-    line-height: 16px;
-  }
 
 
 
@@ -780,6 +911,22 @@ h4 {
 
 @media(max-width: 768px) {
     /* Original */
+    .plan-body {
+        margin:0px 10px 100px 10px;
+      }
+
+   /* div > .plans-description {
+        font-size: 18px;
+        margin: 0 -100px 25px -100px;
+      } */
+
+    div > img {
+        width: 18%;
+    }
+
+    h2 {
+        line-height: 65px;
+    }
     .header .logo {
         width: 190px;
     }
@@ -895,22 +1042,31 @@ h4 {
       }
 
       /* Pricing Table */
-      .header-description {
-        font-size: 21px;
-        text-align: center;
-      }
 
-      .price-table-header {
-        width: 100%;
-      }
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+    }
 
-      td.mobile-toggle:first-child {
-        display: none;
-      }
 
-      .mobile-price-cells {
-        display: flex;
-        flex-direction: column;
-      }
+    .price-table tr td:nth-child(3) {
+        background-color:black;
+        padding: 8px 10px;
+        border-left: 1px gray solid;
+    }
+
+
+
+
+
+    .mobile-header {
+        /* display: inline-flex;
+        width: 50%;
+        justify-content: center;
+        margin: 0;
+        padding: 12px 0px;
+        border: 0;
+        border-bottom: 1px gray solid; */
+    }
 
 }
