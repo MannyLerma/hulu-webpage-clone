@@ -5,14 +5,14 @@
 [Live Preview](https://mannylerma.github.io/hulu-webpage-clone/)
 
 ## Overview
-This is an HTML and CSS prokect with a bit of JavaScript. It is a clone of the Hulu landing page and part of a [YouTube tutorial](https://www.youtube.com/watch?v=9OVLaEjY-Rc&t=3665s). I used this\
+This is an HTML and CSS prokect with a bit of JavaScript. It is a clone of the Hulu landing page and part of a [YouTube tutorial](https://www.youtube.com/watch?v=9OVLaEjY-Rc&t=3665s). I used this
 project early on to get a better understanding on how one goes about creating a webpage. 
 
 ### What I Did Differently
-The tutorial didn't include how to create the slider element in the Live Sports section to move between the different tabs - Breaking News\
+The tutorial didn't include how to create the slider element in the Live Sports section to move between the different tabs - Breaking News
 and Big Events. It also didn't include the sticky header for the pricing table.
 
-I wanted to implement these elements to my clone. I wanted to get closer to something of a finished product so I researched how to get the\
+I wanted to implement these elements to my clone. I wanted to get closer to something of a finished product so I researched how to get the
 desired results through various resources on the internet.
 
 ## Built With
